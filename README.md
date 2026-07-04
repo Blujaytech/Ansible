@@ -12,6 +12,19 @@ sudo dnf install ansible -y
 [or]
 sudo dnf install -y ansible-core
 ```
+Install Python Package Manager (pip)
+```
+sudo dnf install -y python3-pip
+```
+Install Ansible Using pip
+```
+python3 -m pip install --user ansible
+```
+Add User's Local Binary Directory to PATH
+```
+echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
+```
 Verify installation
 ```
 ansible --version
